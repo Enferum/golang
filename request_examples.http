@@ -1,0 +1,26 @@
+GET http://localhost:8080/albums
+Accept: application/json
+
+###
+POST http://localhost:8080/albums
+Content-Type: application/json
+
+{
+  "id": "5","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99
+}
+
+###
+GET http://localhost:8080/albums/1
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/albums/1
+Content-Type: application/json
+
+{
+  "title": "New title"
+}
+
+###
+DELETE http://localhost:8080/albums/1
+Content-Type: application/json
